@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --Roboto-font: 'Roboto', sans-serif;
+    --Raleway-font: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: rgb(17, 31, 158);
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+    position: relative;
+}
+
+.github-img {
+    width: 200px;
+}
+
+.head {
+    margin-top: 1rem;
+    font-family: var(--Raleway-font);
+    font-weight: bold;
+    color: white;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.search-bar {
+    margin-top: 2rem;
+}
+
+.search-bar input {
+    padding: 1rem;
+    outline: none;
+    border: 1px solid greenyellow;
+    width: 15rem;
+    background: none;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.search-bar input::placeholder {
+    color: white;
+    font-family: var(--Raleway-font);
+
+}
+
+.search-bar input:focus-visible {
+    transition: 450ms;
+    transform: scale(1);
+    border: 4px solid greenyellow;
+
+}
+
+.developer-name {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.developer-name .line {
+    font-family: var(--Raleway-font);
+    color: white;
+    letter-spacing: 1px;
+}
+
+.developer-name .line a {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.developer-name .line a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px){
+    .github-img {
+        width: 100px;
+    }
+    
+    .head {
+        font-size: 1.4rem;
+    }
+    
+}
+@media screen and (max-width:300px){
+    .github-img {
+        width: 80px;
+    }
+    
+    .head {
+        font-size: 1rem;
+    }
+    .search-bar input {
+        width: 10rem;
+    }
+    
+}
+
+/*  */
+
+.main {
+    display: none;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.user-image {
+    width: 180px;
+    border: 4px solid greenyellow;
+    border-radius: 6rem;
+}
+
+.user-name {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: white;
+    font-family: var(--Raleway-font);
+}
+
+.user-id {
+    color: white;
+    font-weight: bold;
+    font-family: var(--Raleway-font);
+}
+
+.user-bio {
+    margin-top: 2rem;
+    color: white;
+    font-weight: bold;
+    font-family: var(--Raleway-font);
+    letter-spacing: 2px;
+}
+
+.user-fol {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: var(--Raleway-font);
+}
+
+.follower span {
+    margin-left: 1rem;
+}
+
+.user-location {
+    margin-top: .7rem;
+    color: white;
+    font-size: 1.5rem;
+    font-family: var(--Raleway-font);
+}
+
+.repo-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.repo {
+    background-color: white;
+    width: 90%;
+    min-height: 70vh;
+    border: 2px solid greenyellow;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+    padding: 2rem;
+    row-gap: 30px;
+    column-gap: 20px
+}
+
+.repo-1 {
+    border: 2px solid grey;
+    min-width: 80%;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: 25vh;
+    overflow-y: scroll;
+    background-color: antiquewhite;
+    box-shadow: -1px 1px 5px 5px rgba(0, 0, 0, 0.75);
+}
+
+.repo-1:hover {
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.repo-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.repo-bio {
+    margin-top: 1rem;
+    font-family: var(--Raleway-font);
+}
+
+.repo-tec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.repo-name {
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: var(--Raleway-font);
+}
+
+.visible {
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: .4rem;
+    width: 20%;
+    text-align: center;
+    font-weight: 500;
+    font-family: var(--Raleway-font);
+}
+
+.btn-back-button a{
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: red;
+    padding: 1rem;
+}
+
+.check-repo {
+    padding: .5rem;
+    outline: none;
+    background-color: rgb(50, 111, 85);
+    border: none;
+    cursor: pointer;
+    padding: .7rem;
+    font-family: var(--Raleway-font);
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .repo-1 {
+        display: block;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 400px) and (min-width:200px)  {
+    .user-image {
+        width: 100px;
+    }
+    
+    .user-name {
+        font-size: 1.5rem;
+        
+    }
+    .user-bio {
+        letter-spacing: 1px;
+    }
+
+.repo {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.repo-container{
+    padding: 1rem;
+}
+.repo-1 {
+    border: 2px solid grey;
+    width: 20%;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: 30vh;
+    overflow-y: scroll;
+    background-color: antiquewhite;
+    box-shadow: -1px 1px 5px 5px rgba(0, 0, 0, 0.75);
+}
+    
+}
